@@ -83,7 +83,7 @@ body {
 .hero-section {
   height: 50rem;
   padding: 6rem;
-  background: url(./../images/hero-img.jpg) no-repeat center center fixed;
+  background: url(./../images/tea-0.jpg);
 }
 
 .hero-container {
@@ -114,6 +114,14 @@ body {
   color: #fff;
   border: none;
   border-radius: 3rem;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.hero-container button:hover {
+  background-color: #fff;
+  color: rgb(167, 146, 119);
+  border: 1px solid rgb(167, 146, 119);
 }
 
 /* ************************** */
@@ -220,16 +228,17 @@ body {
 }
 
 .item1 {
-  background: url(./../images/mocha.jpg) no-repeat center center fixed;
-  background-size: 100% 100%;
+  background: url(./../images/mocha.jpg);
+  background-size: cover;
 }
 .item2 {
-  background: url(./../images/espresso.png) no-repeat center center fixed;
-  background-size: 100% 100%;
+  background: url(./../images/espresso.png);
+  background-size: cover;
 }
 .item3 {
-  background: url(./../images/cappucino.jpg) no-repeat center center fixed;
-  background-size: 100% 100%;
+  background: url(./../images/cappucino.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .divider {
@@ -287,10 +296,22 @@ body {
   color: black;
   border: 1px solid black;
   cursor: pointer;
+  transition: all 0.5s;
+}
+.top-products-btns button:hover {
+  background-color: #000;
+  color: antiquewhite;
+  border: 1px solid antiquewhite;
+}
+#activeBtn {
+  background-color: #000;
+  color: darkred;
 }
 
-.top-products-btns button:nth-child(1) {
-  background-color: rgb(167, 146, 119);
+#activeBtn:hover {
+  color: rgb(167, 146, 119);
+  background-color: #000;
+  border: 1px solid rgb(167, 146, 119);
 }
 
 .top-products-container {
@@ -337,6 +358,9 @@ body {
   border-radius: 50%;
   padding: 1rem;
 }
+.product-pricing .icon i {
+  background-color: #000;
+}
 
 /* Making image size responsive */
 
@@ -382,6 +406,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* Position for Modal Image */
+  position: relative;
 }
 
 /* Making Image Grid */
@@ -418,6 +444,14 @@ body {
 }
 .img5 {
   grid-column: 4/5;
+}
+.img6 {
+  grid-column: 5 / 6;
+  grid-row: 1/2;
+}
+.img7 {
+  grid-column: 5/6;
+  grid-row: 2/3;
 }
 
 /* ******************************** */
@@ -544,6 +578,14 @@ body {
   border-radius: 1rem;
   background-color: rgb(167, 146, 119);
   color: #fff;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.blog button:hover {
+  background-color: #fff;
+  color: rgb(167, 146, 119);
+  border: 1px solid rgb(167, 146, 119);
 }
 /* Making image size responsive */
 
@@ -570,6 +612,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 4rem 6rem;
 }
 
 .brand-container {
@@ -598,4 +641,155 @@ body {
   color: rgb(167, 146, 119);
   background-color: #fff;
   border: 1px solid rgb(167, 146, 119);
+}
+
+/* ******************************* */
+/* End of brand section */
+/* ******************************** */
+
+/* ******************************** */
+/* Start of footer section */
+/* ******************************** */
+
+.footer {
+  background-color: rgb(167, 146, 119);
+  padding: 2rem 6rem;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center;
+  gap: 1rem;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 2rem;
+}
+
+.box h3 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.box:nth-child(4) {
+  margin-top: 1.75rem;
+}
+.box:nth-child(4) p {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+}
+
+.footer-info p {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.footer button {
+  width: 50%;
+  padding: 0.7rem;
+  border-radius: 1rem;
+  border: none;
+  text-transform: uppercase;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.7s;
+}
+
+.footer button:hover {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid black;
+}
+
+/* ******************************* */
+/*  ** End of footer section ** */
+/* ******************************* */
+
+/* ******* Function classes ********* */
+
+.hidden {
+  display: none;
+}
+
+.close-modal {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  padding: 0.5rem 1rem;
+  background-color: gray;
+  color: #fff;
+  border: none;
+  border-radius: 0.7rem;
+  cursor: pointer;
+  transition: all 0.7s;
+}
+
+.close-modal:hover {
+  background-color: #fff;
+  color: gray;
+  border: 1px solid gray;
+}
+
+#modal {
+  padding: 4rem;
+  background-color: lightcoral;
+  width: 40%;
+  height: 50%;
+  position: absolute;
+  top: 10rem;
+  border-radius: 2rem;
+}
+
+#modal img {
+  width: 50%;
+  height: 100%;
+  border-radius: 2rem;
+}
+
+/* ***************************** */
+/* Modal Functuanility END */
+/* ***************************** */
+
+/* ****************************** */
+/* Crousel Functuanility */
+/* ****************************** */
+.crousel {
+  text-align: center;
+  background-color: sandybrown;
+  width: 50%;
+  margin: 1rem auto;
+  padding: 2.5rem;
+  border-radius: 2rem;
+}
+
+.next,
+.last {
+  padding: 0.7rem 2rem;
+  margin-left: 1rem;
+  border-radius: 1rem;
+  border: none;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.next:hover {
+  background-color: salmon;
+  color: saddlebrown;
+}
+
+.last:hover {
+  background-color: sandybrown;
+  color: #fff;
+  border: 1px solid silver;
+}
+
+.hero-section {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }

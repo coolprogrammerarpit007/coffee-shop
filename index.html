@@ -42,6 +42,10 @@
     <!-- Start of Hero Section -->
 
     <section class="hero-section">
+      <div class="crousel">
+        <button class="next">Next</button>
+        <button class="last">Previous</button>
+      </div>
       <div class="hero-container">
         <h2>Authntic Coffee</h2>
         <div class="hero-text">
@@ -161,72 +165,88 @@
         <h3>Top Products</h3>
       </div>
       <div class="top-products-btns">
-        <button class="featured">Featured</button>
+        <button class="featured active" id="activeBtn">Featured</button>
         <button class="latest">Latest</button>
         <button class="bestseller">Bestseller</button>
       </div>
       <div class="top-products-container">
         <div class="product">
           <div class="img-container">
-            <img src="./images/topProducts/product1.jpg" alt="item1" />
+            <img
+              src="./images/topProducts/product1.jpg"
+              alt="item1"
+              class="product-img"
+            />
           </div>
           <div class="product-name">
-            <h3>Irish Coffee</h3>
+            <h3 class="product-title">Irish Coffee</h3>
           </div>
           <div class="product-pricing">
             <div class="icon">
               <i class="fas fa-lock"></i>
             </div>
             <div class="item-price">
-              <p>$96.00</p>
+              <p class="product-price">$96.00</p>
             </div>
           </div>
         </div>
         <div class="product">
           <div class="img-container">
-            <img src="./images/topProducts/product2.jpg" alt="item2" />
+            <img
+              src="./images/topProducts/product2.jpg"
+              alt="item2"
+              class="product-img"
+            />
           </div>
           <div class="product-name">
-            <h3>Calypso Coffee</h3>
+            <h3 class="product-title">Calypso Coffee</h3>
           </div>
           <div class="product-pricing">
             <div class="icon">
               <i class="fas fa-lock"></i>
             </div>
             <div class="item-price">
-              <p>$2,000.00</p>
+              <p class="product-price">$2,000.00</p>
             </div>
           </div>
         </div>
         <div class="product">
           <div class="img-container">
-            <img src="./images/topProducts/product3.jpg" alt="item3" />
+            <img
+              src="./images/topProducts/product3.jpg"
+              alt="item3"
+              class="product-img"
+            />
           </div>
           <div class="product-name">
-            <h3>Austraian Coffee</h3>
+            <h3 class="product-title">Australian Coffee</h3>
           </div>
           <div class="product-pricing">
             <div class="icon">
               <i class="fas fa-lock"></i>
             </div>
             <div class="item-price">
-              <p>$122.00</p>
+              <p class="product-price">$122.00</p>
             </div>
           </div>
         </div>
         <div class="product">
           <div class="img-container">
-            <img src="./images/topProducts/product4.jpg" alt="item4" />
+            <img
+              src="./images/topProducts/product4.jpg"
+              alt="item4"
+              class="product-img"
+            />
           </div>
           <div class="product-name">
-            <h3>Witch Coffee</h3>
+            <h3 class="product-title">Witch Coffee</h3>
           </div>
           <div class="product-pricing">
             <div class="icon">
               <i class="fas fa-lock"></i>
             </div>
             <div class="item-price">
-              <p>$123.00</p>
+              <p class="product-price">$123.00</p>
             </div>
           </div>
         </div>
@@ -248,19 +268,41 @@
     <section class="gallery-section">
       <div class="gallery-container">
         <div class="gallery-img img1">
-          <img src="./images/gallery/1.jpg" alt="first item" />
+          <img
+            src="./images/gallery/1.jpg"
+            alt="first item"
+            class="gallery-image"
+          />
         </div>
         <div class="gallery-img img2">
-          <img src="./images/gallery/2.jpg" alt="second item" />
+          <img
+            src="./images/gallery/2.jpg"
+            alt="second item"
+            class="gallery-image"
+          />
         </div>
         <div class="gallery-img img3">
-          <img src="./images/gallery/3.jpg" alt="third item" />
+          <img
+            src="./images/gallery/3.jpg"
+            alt="third item"
+            class="gallery-image"
+          />
         </div>
         <div class="gallery-img img4">
-          <img src="./images/gallery/4.jpg" alt="fourth item" />
+          <img
+            src="./images/gallery/4.jpg"
+            alt="fourth item"
+            class="gallery-image"
+          />
         </div>
         <div class="gallery-img img5">
-          <img src="./images/gallery/5.jpg" alt="" />
+          <img src="./images/gallery/5.jpg" alt="" class="gallery-image" />
+        </div>
+        <div class="gallery-img img6">
+          <img src="./images/gallery/6.jpg" alt="" class="gallery-image" />
+        </div>
+        <div class="gallery-img img7">
+          <img src="./images/gallery/7.jpg" alt="" class="gallery-image" />
         </div>
       </div>
     </section>
@@ -449,7 +491,43 @@
     </section>
 
     <footer class="footer">
-      <div class="footer-container"></div>
+      <div class="footer-container">
+        <div class="box">
+          <h3>contact info</h3>
+          <div class="footer-info">
+            <p>Address: New Delhi</p>
+            <p>Phone: +91-9171269994</p>
+            <p>Fax: 0123-458-268</p>
+            <p>Email:company@mail.com</p>
+          </div>
+        </div>
+        <div class="box">
+          <h3>information</h3>
+          <div class="footer-info">
+            <p>About Us</p>
+            <p>Delivery Information</p>
+            <p>Privacy Policy</p>
+            <p>Terms and Conditions</p>
+          </div>
+        </div>
+        <div class="box">
+          <h3>my account</h3>
+          <div class="footer-info">
+            <p>My Account</p>
+            <p>Order History</p>
+            <p>Wishlist</p>
+            <p>NewsLetter</p>
+          </div>
+        </div>
+        <div class="box">
+          <h3>newsletter</h3>
+          <div class="footer-info">
+            <p>subscribe to our newsletter and stay up to date.</p>
+            <p class="email">Enter a email here.</p>
+          </div>
+          <button class="footerbt">subscribe</button>
+        </div>
+      </div>
     </footer>
   </body>
   <script src="./js/script.js"></script>
