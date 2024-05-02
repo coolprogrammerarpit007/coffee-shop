@@ -236,3 +236,45 @@ previousBtn.addEventListener(`click`, (e) => {
   console.log(newSrc);
   heroContainer.style.backgroundImage = `url(${newSrc})`;
 });
+
+// **********************************
+
+// ***********************************
+// blog slider
+
+// Acessing to the blog dom
+
+const blogContainer = document.querySelectorAll(`.blog-container`);
+const blogs = document.querySelectorAll(`.blog`);
+
+const blogLastBtn = document.querySelector(`.last-btn`);
+const blogNextBtn = document.querySelector(`.next-btn`);
+
+let count = 0;
+blogNextBtn.addEventListener(`click`, () => {});
+// Feature to show the blogs
+blogNextBtn.addEventListener(`click`, (e) => {
+  console.log(`working!`);
+  if (count >= blogContainer.length - 1) {
+    blogContainer[count].classList.add(`blog-hidden`);
+    count = 0;
+    blogContainer[count].classList.remove(`blog-hidden`);
+  } else {
+    blogContainer[count].classList.add(`blog-hidden`);
+    count++;
+    blogContainer[count].classList.remove(`blog-hidden`);
+  }
+  console.log(count);
+});
+
+blogLastBtn.addEventListener(`click`, (e) => {
+  if (count <= 0) {
+    blogContainer[count].classList.add(`blog-hidden`);
+    count = blogContainer.length - 1;
+    blogContainer[count].classList.remove(`blog-hidden`);
+  } else {
+    blogContainer[count].classList.add(`blog-hidden`);
+    count--;
+    blogContainer[count].classList.remove(`blog-hidden`);
+  }
+});
