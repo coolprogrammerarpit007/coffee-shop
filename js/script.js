@@ -14,7 +14,7 @@ const productImgs = document.querySelectorAll(`.product-img`);
 const productTitle = document.querySelectorAll(`.product-title`);
 const productPrice = document.querySelectorAll(`.product-price`);
 
-// featured items data
+// featured object data
 
 const featuredObjs = [
   {
